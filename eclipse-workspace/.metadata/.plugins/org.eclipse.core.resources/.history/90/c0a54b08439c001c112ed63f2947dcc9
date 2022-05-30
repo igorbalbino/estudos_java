@@ -1,0 +1,11 @@
+package Gerador;
+
+import java.util.*;
+
+public class Gerenciador {
+	private List<Comanda> comandas;
+	
+	public void adcNovaComanda(String nome, String pedido) {
+		comandas.add(new Comanda(nome, pedido));
+	}
+}

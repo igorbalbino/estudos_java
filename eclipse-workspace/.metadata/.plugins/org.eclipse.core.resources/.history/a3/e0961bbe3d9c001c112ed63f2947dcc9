@@ -1,0 +1,13 @@
+package Gerador;
+
+import java.util.*;
+
+public class Gerenciador {
+	private List<Comanda> comandas;
+	
+	public static void main() {} /*representação*/
+	
+	private void adcNovaComanda() {
+		
+	}
+}

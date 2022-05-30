@@ -1,0 +1,15 @@
+package Gerador;
+
+import java.util.*;
+
+public class Comanda {
+	private String[] nome;
+	private String[] detalhesPedido;
+	private boolean statusComandaPaga = false;
+	
+	public Comanda(String [] params) {
+		this.nome = nome;
+		this.detalhesPedido = pedido;
+		
+	}
+}

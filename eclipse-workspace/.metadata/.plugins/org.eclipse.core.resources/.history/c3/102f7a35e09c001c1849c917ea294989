@@ -1,0 +1,59 @@
+/*Sistema gerenciador de Comandas para restaurante. Simples, para gerenciamento local e momentâneo.
+ * Será lançada, posterioemente, uma versão WEB com armazenamento em banco de dados.
+ * 
+ * Autor: Igor do Espírito Santo Balbino
+ * Nota: Faço isso para aprender a criar sistemas em Java e 
+ * para iniciar a implementação de meus conhecimentos recentes em POO.*/
+
+package Gerador;
+
+import java.util.*;
+import javax.swing.JOptionPane;
+
+public class GrapUI {
+	private Gerenciador gerenciadorDeComandas = new Gerenciador();
+	
+	public GrapUI() {
+		do {
+			mostraTelaInicial();
+		}
+		while(true);
+	}
+	
+	private void mostraTelaInicial() {
+		int opcaoSelecionada = Integer.parseInt(
+				JOptionPane.showInputDialog("Olá, seja Bem Vindo! Você está no Gerenciador de comandas simples.\n\n"
+												+ "Digite uma das opções a seguir para navegar no sistema.\n\n"
+												+ "1 - Gerar nova comanda.\n"
+												+ "2 - Pagar comanda.\n"
+												+ "3 - Mostrar comanda por nome.\n"
+												+ "4 - Mostrar todas as comandas salvas.\n"
+												+ "5 - Encerrar sistema.\n\n"));
+		validaOpcaoSelecionada(opcaoSelecionada);
+	}
+	
+	private void validaOpcaoSelecionada(int opcaoSelecionada) {
+		switch(opcaoSelecionada) {
+		case 1:
+			mostraTelaParaGerarComanda();
+			break;
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+		case 5:
+			break;
+		}
+	}
+	
+	private void mostraTelaParaGerarComanda() {
+		String nome = JOptionPane.showInputDialog("Digite o nome do cliente: ");
+		String pedido = JOptionPane.showInputDialog("Digite o pedido do cliente: ");
+		
+		String[] params = {nome, pedido};
+		
+		gerenciadorDeComandas.adcNovaComanda(params);
+	}
+}

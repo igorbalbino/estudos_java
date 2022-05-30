@@ -1,0 +1,8 @@
+package Gerador;
+
+import java.util.*;
+
+public class Gerenciador {
+	private List<Comanda> comandas;
+	
+}

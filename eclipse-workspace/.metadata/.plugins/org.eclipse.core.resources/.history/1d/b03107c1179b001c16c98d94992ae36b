@@ -1,0 +1,44 @@
+package Gerador;
+
+import java.util.*;
+
+public class Comanda implements ComandaImpl {
+	private static int nrComandas;
+	private String[] nome;
+	private String[] detalhesPedido;
+	private boolean statusComandaPaga;
+	private List<String> comandas = new List<>;
+	
+	public Comanda(String[] nome, String[] pedido) {
+		Comanda.nrComandas += 1;
+		this.nome = null;
+		this.detalhesPedido = null;
+		this.statusComandaPaga = false;
+		
+		geraComanda(nome, pedido);
+	}
+	
+	public void geraComanda(String[] nome, String[] pedido) {
+		this.nome = nome;
+		this.detalhesPedido = pedido;
+		this.statusComandaPaga = true;
+		
+		salvaComandasLocal();
+	}
+	
+	private void salvaComandasLocal() {
+		comandas.add("aa");
+	}
+	
+	public void finalizaComanda(String[] nome) {
+		
+	}
+	
+	public void visualizaComandasPorNome() {
+		
+	}
+	
+	public void mostraListaComandas() {
+		
+	}
+}

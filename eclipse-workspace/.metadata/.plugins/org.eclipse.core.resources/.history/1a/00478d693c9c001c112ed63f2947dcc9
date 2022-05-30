@@ -1,0 +1,11 @@
+package Gerador;
+
+import java.util.*;
+
+public class Comanda implements ComandaImpl {
+	private String[] nome;
+	private String[] detalhesPedido;
+	private boolean statusComandaPaga;
+	
+	
+}

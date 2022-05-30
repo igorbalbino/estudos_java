@@ -1,0 +1,5 @@
+package Gerador;
+
+public interface ComandaImpl {
+
+}

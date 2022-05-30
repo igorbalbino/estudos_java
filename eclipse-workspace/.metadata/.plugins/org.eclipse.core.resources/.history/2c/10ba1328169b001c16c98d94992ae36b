@@ -1,0 +1,18 @@
+package Gerador;
+
+public interface ComandaImpl {
+	public static int nrComandas = 0;
+	public String[] nome = null;
+	public String[] detalhesPedido = null;
+	public boolean statusComandaPaga = false;
+	
+	public void geraComanda(String[] nome, String[] pedido);
+	
+	private void salvaComandasLocal() {}
+	
+	public void finalizaComanda();
+	
+	public void visualizaComandasPorNome();
+	
+	public void mostraListaComandas();
+}

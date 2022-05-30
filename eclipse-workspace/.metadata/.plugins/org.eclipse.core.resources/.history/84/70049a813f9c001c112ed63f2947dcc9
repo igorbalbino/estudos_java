@@ -1,0 +1,14 @@
+/*Sistema gerenciador de Comandas para restaurante. Simples, para gerenciamento local e momentâneo.
+ * Será lançada, posterioemente, uma versão WEB com armazenamento em banco de dados.
+ * 
+ * Autor: Igor do Espírito Santo Balbino
+ * Nota: Faço isso para aprender a criar sistemas em Java e 
+ * para iniciar a implementação de meus conhecimentos recentes em POO.*/
+
+package Gerador;
+
+import java.util.*;
+
+public class GUI {
+	
+}
