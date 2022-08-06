@@ -14,6 +14,8 @@ public class SeleniumImpl {
 
         WebDriver driver = new ChromeDriver();
 
+        System.out.println("TA DANDO PAAAAAAAAAU");
+//        driver.navigate().to(url);
         driver.get(url);
         pause(5000);
     }
